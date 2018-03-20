@@ -92,16 +92,21 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias doctor='java -jar /media/jack/ExtraDrive1/Java\ Homework/drjava-beta-20160913-225446.jar'
-alias intellij='./home/jack/Tools/idea-IC-171.3780.107/bin/idea.sh'
-alias pycharm='./home/jack/Tools/pycharm-community-2017.1.5/bin/pycharm.sh'
+alias intellij='nohup ~/Tools/idea-IC-171.3780.107/bin/idea.sh &'
+alias pycharm='nohup ~/Tools/pycharm-community-2017.1.5/bin/pycharm.sh &'
 alias cdcd='cd ../..'
 alias c='clear'
 alias silo='ssh -X jackclar@burrow.soic.indiana.edu'
-alias newwp=' feh --bg-scale --randomize /media/jack/Wallpapers/* &'
+alias newwp='feh --bg-scale --randomize /media/jack/Wallpapers/* &'
+alias startmongo='mongod --dbpath ~/cloudmesh/data/db'
+alias eagle='nohup ~/Tools/eagle-8.6.0/eagle &'
+alias browse='nohup nautilus --browseri &'
+alias ech0='ssh jackclar@149.165.150.76'
+'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+#alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -125,3 +130,9 @@ fi
 
 # added by Anaconda3 4.4.0 installer
 export PATH="/home/jack/anaconda3/bin:$PATH"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
