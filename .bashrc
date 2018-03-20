@@ -102,7 +102,6 @@ alias startmongo='mongod --dbpath ~/cloudmesh/data/db'
 alias eagle='nohup ~/Tools/eagle-8.6.0/eagle &'
 alias browse='nohup nautilus --browseri &'
 alias ech0='ssh jackclar@149.165.150.76'
-'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
